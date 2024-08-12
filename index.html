@@ -1,0 +1,341 @@
+<html><head><base href="https://ai-esg-expert.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>許哲彰 - ESG 與人工智能專家</title>
+<style>
+:root {
+  --primary-color: #008CFF;
+  --secondary-color: #22405C;
+  --background-color: #e6f3e6; /* 更改為淡綠色 */
+  --text-color: #333333; /* 更改文字顏色以適應淡綠色背景 */
+  --accent-color: #4CAF50;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(76, 175, 80, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 140, 255, 0.1) 0%, transparent 20%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url('https://img95.699pic.com/xsj/10/hh/de.jpg!/fh/300');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 140, 255, 0.5);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.date {
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* 添加一些科技風格的動畫效果 */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+.profile-image {
+  animation: pulse 2s infinite;
+}
+
+.skill {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(-45deg);
+  animation: shine 5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+    top: -50%;
+  }
+  100% {
+    left: 150%;
+    top: 150%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="banner"></div>
+      <img src="profile-image.jpg" alt="許哲彰的照片，一位亞洲男性，短髮，穿著灰色連帽衫，背景是一道白色牆壁" class="profile-image" width="150" height="150">
+      <h1>許哲彰</h1>
+      <p>ESG 與人工智能專家</p>
+    </header>
+
+    <div class="contact-info">
+      <p>電子郵件：hsu.che.chang@example.com</p>
+      <p>電話：(+886) 912-345-678</p>
+      <p>地址：台灣台北市</p>
+      <p>LinkedIn：linkedin.com/in/che-chang-hsu</p>
+    </div>
+
+    <div class="section">
+      <h2>專業概述</h2>
+      <p>我是一位具有多元背景的 ESG 與人工智能專家，專注於將先進技術應用於環境、社會和公司治理領域。我的經歷涵蓋了從企業到創業的多個階段，最終找到了結合技術創新和永續發展的職業方向。我致力於運用 AI 工具來改善碳盤查管理和 ESG 永續管理，為組織提供更智能、更有效的解決方案。</p>
+    </div>
+
+    <div class="section">
+      <h2>核心能力</h2>
+      <div class="skills">
+        <span class="skill">ESG 策略規劃</span>
+        <span class="skill">碳盤查管理</span>
+        <span class="skill">AI 數據分析</span>
+        <span class="skill">永續報告撰寫</span>
+        <span class="skill">專案管理</span>
+        <span class="skill">跨部門協作</span>
+        <span class="skill">生成式 AI 應用</span>
+        <span class="skill">綠能實務</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>工作經歷</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="date">2023 年至今</p>
+          <h3>ESG 智能解決方案顧問</h3>
+          <p>獨立顧問</p>
+          <ul>
+            <li>為企業提供 ESG 策略諮詢，結合 AI 技術優化永續管理流程</li>
+            <li>開發和實施智能碳盤查系統，提高企業碳排放管理效率</li>
+            <li>協助企業利用生成式 AI 工具改進 ESG 報告的質量和深度</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <p class="date">2020 年 - 2022 年</p>
+          <h3>創業者</h3>
+          <p>自主創業</p>
+          <ul>
+            <li>創立並經營一家聚焦於永續創新的科技新創公司</li>
+            <li>開發環保相關的技術解決方案，探索 AI 在環境保護領域的應用</li>
+            <li>管理團隊、籌措資金、制定業務策略</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <p class="date">2015 年 - 2020 年</p>
+          <h3>業務發展經理</h3>
+          <p>某科技公司</p>
+          <ul>
+            <li>負責公司的業務拓展、客戶關係管理和策略合作</li>
+            <li>設計並執行銷售策略，成功提升公司市場份額</li>
+            <li>組織和培訓銷售團隊，優化銷售流程</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>教育背景</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="date">2023 年</p>
+          <h3>AI 智慧數據分析及綠能實務應用班</h3>
+          <p>台北市勞工局</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">2011 年 - 2015 年</p>
+          <h3>商業管理學士</h3>
+          <p>某大學</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>專案與成就</h2>
+      <ul>
+        <li>開發了一個基於 AI 的碳足跡追蹤系統，幫助多家企業提高了碳排放管理效率 30%</li>
+        <li>設計並實施了一個結合 NLP 技術的 ESG 風險評估工具，為投資決策提供更準確的 ESG 洞察</li>
+        <li>主導開發了一個金融機構技術倫理框架，確保 AI 技術在金融領域的負責任應用</li>
+        <li>在創業期間，成功為環保技術解決方案籌集了 500 萬新台幣的種子輪資金</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>語言能力</h2>
+      <ul>
+        <li>中文（母語）</li>
+        <li>英語（流利）</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>興趣愛好</h2>
+      <p>環保志願者活動、閱讀科技趨勢文章、參與永續發展研討會、戶外徒步旅行</p>
+    </div>
+  </div>
+</body>
+</html>
